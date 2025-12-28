@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SoundSpace – Music & Audio Discovery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">SoundSpace</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#discover">Discover</a>
+      <a href="#categories">Categories</a>
+    </nav>
+  </header>
+
+  <!-- PAGE CONTAINER -->
+  <div class="page">
+
+    <!-- ABOUT -->
+    <section class="hero" id="about">
+      <h2>About SoundSpace</h2>
+      <p>
+        SoundSpace is a curated music and audio discovery platform created as a
+        frontend portfolio project. It focuses on clean interface design,
+        visual hierarchy, and intuitive user interaction using HTML, CSS,
+        and JavaScript.
+      </p>
+    </section>
+
+    <!-- ABOUT IMAGES -->
+    <section class="grid">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+          alt="Music workspace"
+        />
+        <div class="card-body">
+          <h3>Curated Experiences</h3>
+          <span>Thoughtfully selected audio content</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4"
+          alt="Headphones"
+        />
+        <div class="card-body">
+          <h3>Modern UI Design</h3>
+          <span>Clean layouts and visual clarity</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="hero" id="discover">
+      <h2>Discover New Audio Experiences</h2>
+      <p>
+        Browse playlists, albums, and podcasts presented through a modern
+        card-based layout. Each item is interactive and leads to a dedicated
+        detail page, demonstrating navigation flow and content presentation.
+      </p>
+    </section>
+
+    <!-- DISCOVER GRID (DYNAMIC CONTENT) -->
+    <main class="grid" id="grid"></main>
+
+    <!-- CATEGORIES -->
+    <section class="hero" id="categories">
+      <h2>Browse by Category</h2>
+      <p>
+        Filter content by type to explore playlists, albums, or podcasts.
+        This section highlights client-side filtering logic and dynamic UI
+        updates without requiring a backend.
+      </p>
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+    <section class="filters">
+      <button class="active" onclick="filterItems('all', this)">All</button>
+      <button onclick="filterItems('playlist', this)">Playlists</button>
+      <button onclick="filterItems('album', this)">Albums</button>
+      <button onclick="filterItems('podcast', this)">Podcasts</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        SoundSpace is a frontend-focused portfolio project demonstrating
+        responsive design, interactive filtering, and multi-page navigation
+        using modern web standards.
+      </p>
+      <span>© 2025 · Portfolio Project</span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
